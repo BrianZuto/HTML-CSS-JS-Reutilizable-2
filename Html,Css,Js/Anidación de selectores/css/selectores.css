@@ -1,0 +1,39 @@
+
+/*Diferentes formas de anidar los selectores o usar los selectores*/
+
+
+/*Forma de darle color a un p*/
+.p-contenedor{
+    color: green;
+}
+
+
+/*Forma de darle color a todos los p */
+p{
+    color: green;
+}
+
+
+/*Forma de darle color a todos los p, de la clase contenedor*/
+.contenedor p{
+    color: green;
+}
+
+
+/*Forma de darle background-color a un botón de la clase contenedor*/
+.contenedor #button-contenedor{
+    background-color: yellow;
+}
+
+
+/*Forma de darle color a un p dentro de la clase contenedor que está dentro de la section main*/
+.main.contenedor p{
+    color: green;
+}
+
+
+/*Forma de darle color a un p que está dentro de la clase contenedor, que está dentro de la section
+main, que está dentro de un body*/
+body section.main.contenedor p{
+    color: green;
+}

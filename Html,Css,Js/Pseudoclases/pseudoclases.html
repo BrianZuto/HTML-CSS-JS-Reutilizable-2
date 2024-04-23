@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=., initial-scale=1.0">
+    <title>Pseudoclases</title>
+    <link rel="stylesheet" href="pseudoclases.css">
+
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+        }
+
+        .hover{
+            width: 300px;
+            height: 100px;
+            background-color: bisque;
+        }
+
+        /* Esta psudoclase se utiliza cuando el ratón se pasa por encima  */
+        .hover:hover{
+            background-color: blue;
+        }
+
+        .listado{
+            padding: 15px;
+            background-color: aquamarine;
+        }
+
+        /*Hace referencia a el primer elemento de la clase listado y de los p*/
+        .listado p:first-child{
+            color: brown;
+        }
+
+        a:link{ /*Link no clickeado*/
+            color: darkred;
+        }
+
+        a:visited{ /*Link visitado*/
+            color: blue;
+        }
+
+        a:hover{ /*Colocamos el puntero encima del enlace*/
+            color: black;
+        }
+
+        a:active{ /*Cuando el link está activo*/
+            color: aqua;
+        }
+
+    </style>
+</head>
+
+
+<body>
+    <div class="hover">
+        <p>Esto es un párrafo</p>
+    </div>
+
+    <div class="listado">
+        <p>Párrafo 1</p>
+        <p>Párrafo 2</p>
+        <p>Párrafo 3</p>
+    </div>
+
+    <div class="enlaces">
+        <!-- El target = _blank es para cuando demos click en el enlace, nos abra una pestaña nueva  -->
+        <a href="http://google.com"  target="_blank">Enlace de google</a>
+
+        <a href="http://marca.com"  target="_blank">Enlace a Marca</a>
+    </div>
+</body>
+</html>

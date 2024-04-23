@@ -1,0 +1,12 @@
+/*Creación de una variable*/
+$color-texto: #3f3f3f;
+
+
+/*Creación de un Mixin*/
+@mixin formato-texto($bg-color: #f1f1f1){
+    color: $color-texto;
+    width: 50rem;
+    text-transform: uppercase;
+    background-color: $bg-color;
+
+}

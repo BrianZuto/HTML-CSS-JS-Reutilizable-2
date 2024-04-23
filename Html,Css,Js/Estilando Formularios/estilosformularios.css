@@ -1,0 +1,54 @@
+
+/*Cogemos el input y le damos estilo*/
+.input{
+    width: 100%;
+    border: 2px solid green;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+/*Cogemos el input de tipo password y le damos estilo*/
+.input[type="password"]{
+    color: red;
+}
+
+
+/*Un input de tipo moderno*/
+.input-moderno{
+    outline: none;
+    border: none;
+    border-bottom: 1px solid blue;
+    padding: 5px 5px;
+    color: #5f5f5f;
+}
+
+/*El focus es cuando clickeamos encima del input*/
+.input-moderno:focus{
+    border-bottom: 1px solid #5f5f5f;
+}
+
+
+/*el placeholder son las letras que están dentro del input */
+.input-moderno::placeholder{
+    color: #c2c2c2;
+}
+
+
+
+.input-background{
+    background-color: red;
+    border: none;
+    border-radius: 5px;
+    padding: 5px 10px;
+    outline: none;
+    color: white;
+    box-shadow: 0 0 10px black;
+}
+
+
+
+.input-background::placeholder{
+    color: cornflowerblue;
+}
+
+

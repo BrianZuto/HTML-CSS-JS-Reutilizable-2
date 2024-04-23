@@ -1,0 +1,14 @@
+:root{
+    --color-principl: red; 
+    --ancho-principal: 250px; 
+}
+
+.titulo{
+    /* color: red; */
+    color: var(--color-principl);
+}
+
+.footer{
+    color: aqua;
+    width: var(--ancho-principal);
+}

@@ -1,0 +1,49 @@
+.flex{
+    background-color: yellow;
+    height: 300px;
+
+    /*Contener todo lo que tenga el div y lo 
+    pisiciona de una manera ordenada*/
+    display: flex;
+
+    /*Posicionar los objetos dentro del
+    flex (eje principal)*/
+    
+    justify-content: space-between;
+
+    /*space-between: posicionar lo que está dentro
+    del div en lo largo y el espacio sobrante será la distancia 
+    de los objetos dentro del flex*/
+
+    flex-wrap: wrap;
+    /*Dimencionar lo del div, en función de lo largo y ancho
+    de la pantalla del pc*/
+
+    /*nowrap: por defecto; re organizar todo lo que está dentro del flex en lo largo*/
+    /*wrap: redimencionar siempre en 0 (Lo que hace falta lo va saltando) */
+
+    align-items: center;
+    /*stretch: por defecto, dimensiona en toda la altura del contenedor*/
+    /* center: para que me lo centre */
+    /*flex-star: arriba del todo*/
+    /*flex-end: abajo del todo*/
+
+    flex-direction: column;
+    /*row: es el de defecto
+    row-reverse: Invierte el orden
+    column: me los deja todo como una columna*/
+
+
+}
+.contenido-1{
+    background-color: white;
+    border: 1px solid blue;
+}
+.contenido-2{
+    background-color: white;
+    border: 1px solid blue;
+}
+.contenido-3{
+    background-color: white;
+    border: 1px solid blue;
+}

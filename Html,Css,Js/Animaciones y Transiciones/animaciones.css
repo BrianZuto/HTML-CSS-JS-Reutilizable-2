@@ -1,0 +1,62 @@
+
+/*Le damos un alto, un ancho y un color a la clase padre*/
+.padre{
+    width: 400px;
+    height: 400px;
+    background-color: blue;
+}
+
+/*Le damos un alto, un ancho y un color a la clase hijo*/
+.hijo{
+    width: 50%;
+    height: 50%;
+    background-color: beige;
+
+
+    /* transition: all 1s; --> Para transicionar todo y que dure 1 segundo  */
+    /* transition: transform 1s ease-in-out 1s;  --> Para transicionar todo con una propiedad y que dure 1 segundo */
+
+    /*Para animar, creamos la palabra "traslacion", le damos espera de 1 segundo, le damos la propiedad de la transicion, colocamos que sea infinito, el forwards es para mantener al final al 100% y el alternate es para devolverse */
+    animation: traslacion 1s ease-in-out infinite forwards alternate;
+}
+
+.padre:hover .hijo{
+    /* transform: translateX(100%); --> Para cuando es una transition, el punto a dónde debe llegar*/
+    /* background-color: blueviolet; --> El color final del transition*/
+    /* animation: traslacion 1s ease-in-out infinite forwards alternate; --> Para que sólo se ejecute cuando tengo el cursor encima*/
+
+    /*Cuando tenga el cursor encima, que se pause*/
+    animation-play-state: paused ;
+}
+
+/*La palabra que creamos, le damos vida con la palabra reservada @keyframes*/
+@keyframes traslacion{
+    
+    /*Le decimos que cuando esté en 0% tenga un color y se mantenga ahí*/
+    0%{
+        background-color: beige;
+        transform: translateX(0%);
+    }
+
+    /*Luego cuando se mueva al 25% tenga un 100% en la posición X*/
+    25%{
+        transform: translateX(100%);
+    }
+
+    /*Cuando esté en el 50% se cambie a color rojo y mantenga la posición 100% en X y 100% en Y */
+    50%{
+        background-color: red;
+        transform: translateX(100%) translateY(100%);
+    }
+
+    /*Cunado esté en el 70% se mantenga en la posición 0% en X y 100% en Y*/
+    75%{
+        transform: translateX(0%) translateY(100%);
+    }
+
+    /*Cuando llegue al final, cambie de color y se quede en la posición 0% en X y Y*/
+    100%{
+        background-color: darkorange;
+        transform: translateX(0%) translateY(0%);
+    }
+}

@@ -1,0 +1,45 @@
+.row div{
+    margin: 0.25rem;
+}
+
+
+/*El grid para pantallas pequeñas 
+El más pequeño */
+.col{
+    background-color: cyan;
+}
+
+
+/*El grid para pantallas pequeñas - medianas 
+El más pequeño - mediano */
+.col-sm{
+    background-color: red;
+}
+
+
+/*El grid para pantallas medianas
+El mediano*/
+.col-md{
+    background-color: rgb(115, 255, 0);
+}
+
+
+/*El grid para pantallas medianas
+El mediano*/
+.col-lg{
+    background-color: rgb(153, 0, 255);
+}
+
+
+/*El grid para pantallas medianas - grandes
+El tamaño mediano - grande*/
+.col-xl{
+    background-color: rgb(255, 0, 221);
+}
+
+
+/*El grid para pantallas grandes
+El tamaño más grande*/
+.col-xxl{
+    background-color: rgb(255, 166, 0);
+}

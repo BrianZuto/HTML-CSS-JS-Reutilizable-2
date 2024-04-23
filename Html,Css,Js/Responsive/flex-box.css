@@ -1,0 +1,22 @@
+.contenedor{
+    padding: 0.5rem;
+    background-color: yellow;
+    display: grid;
+    /* flex-direction: column;  ---> Esto es para cuando se una un flex en el display*/
+    grid-template-columns: auto auto auto;
+    gap: 0.5rem;
+    min-height: 5rem;
+
+    /*Eje principal*/
+    /* justify-content: center; */
+
+    /*Eje secundario*/
+    /* align-items: center; */
+
+
+    /* flex-direction: column;*/
+}
+.item{
+    background-color: aquamarine;
+    padding: 0.25rem;
+}

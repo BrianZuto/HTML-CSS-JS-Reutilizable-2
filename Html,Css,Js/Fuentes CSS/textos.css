@@ -1,0 +1,15 @@
+/*Modificar todos los textos del HTML*/
+html{
+
+    /*Modifiqué la fuente manualmente*/
+    /*font-family: Arial, Helvetica, sans-serif;*/
+
+    /*Lo largo de la fuente*/
+    font-size: 15px;
+
+    /*La fuente que exporté de internet con los links de HTML*/
+    font-family: 'Bungee Spice', cursive;
+
+    /*Que la letra sea cursiva*/
+    font-style: italic;
+}

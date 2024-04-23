@@ -1,0 +1,88 @@
+h1{
+    color: red;
+    font-size: 4rem;
+}
+
+p{
+    color: black;
+    font-size: 2rem;
+}
+
+
+/*Diferentes formas de usar la media para poder dar dinamismo a la página web*/
+
+/*Media print, es darle instrucciones y propiedades cuando la vayan a imprimir por impresora*/
+
+/* @media print and (max-width: 576px){
+    h1{
+        color: blue;
+    }
+}
+
+
+/*Media screen es para cuando están transmitiendo una pantalla*/
+
+/* @media screen and (max-width: 576px){
+    h1{
+        color: blue;
+    } 
+}
+
+
+
+
+/*media all es para aplicar en todo*/
+
+/* @media all and (max-width: 576px) {} */
+
+
+
+
+
+/* @media (max-width: 995px){
+    h1{
+        color: green;
+    }
+}
+
+@media (max-width: 576px){
+    h1{
+        color: blue;
+    }
+} */
+
+
+
+/*Le podemos dar condiciones para poder saber cuando se debe aplicar y también si colocamos media sin ningún acompañante, lo tom acomo si estuviera media all */
+
+@media (min-width: 576px){
+    h1{
+        color: blue;
+    }
+}
+
+@media (min-width: 995px){
+    h1{
+        color: green;
+    }
+}
+
+/*Podemos colocar el condicional and que hace referencia a un "Y*/
+
+@media (orientation: landscape) and (min-height: 450px){
+    p{
+        color: brown;
+    }
+}
+
+/*Y podemos colocar una , qué hace referencia a un "O*/
+
+@media (max-width: 350px), (min-width: 700px){
+    h1{
+        background-color: black;
+        color: yellow;
+    }
+}
+
+
+

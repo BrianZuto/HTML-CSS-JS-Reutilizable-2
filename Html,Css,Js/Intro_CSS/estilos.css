@@ -1,0 +1,43 @@
+
+/*Así es como podemos darle estilo a un h o un p*/
+h1 {
+
+    /*Esta es la forma de seleccionar el color de la letra*/
+    color: red;
+}
+
+/*Estoy probando eslitos y fuestes*/
+p {
+    color: blue;
+    /*Esta es la forma de seleccionar qué tan grande será la letra*/
+    font-size: 16px;
+}
+
+/*Se usa el "#" cuando el selector es de tipo id*/
+#primera-noticia{
+    color: green;
+    font-size: 11px;
+}
+
+#segunda-noticia{
+    color: chocolate;
+    font-size: 15px;
+}
+
+/*Se usa el "." cuando el selector es de tipo class*/
+.encabezado{
+    color: blueviolet;
+    font-size: 24px;
+    /*Manera de transormar el texto a mayuscula*/
+    text-transform:uppercase ;
+}
+
+
+/*se usa el "*" cuando las class no tienen definido algun elemento 
+en este caso se usan cuando las class no tienen definido un color, entonces 
+con "*" se van a colorar de rojo*/
+
+*.warning{
+    color: red;
+}
+

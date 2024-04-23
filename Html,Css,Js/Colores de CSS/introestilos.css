@@ -1,0 +1,68 @@
+/*Estilos para colores*/
+
+/*Forma normal de colocar un color*/
+.colores{
+    color: red;
+}
+
+/*Forma tecnica de colocar un color
+pagina para crear colores, coolors.co*/
+.colorn{
+    color: #BCE748;
+}
+
+/*Forma RGB para poder elegir un color*/
+.color-rgb{
+    color: rgb(119, 0, 255);
+
+}
+
+/*Forma RGBA para elegir un color, la diferencia del RGB al RGBA,
+es que el RGBA puede medir qué tan opaco puede ser el color*/
+.color-rgba{
+
+    color: rgb(100, 100, 100);
+
+}
+
+.fondo{
+
+    /*El background es para el fondo
+    color: es para colocar un color de fondo
+    image: es para colocar una iamgen de fondo
+    position: es para ajustar la posicion de la imagen de fondo, siempre en formato (i,j) = (Horizontal, vertical)*/
+    background-color: rgba(0, 0, 255, 0.11);
+    background-image: url("https://www.leagueoflegends.com/static/open-graph-2e582ae9fae8b0b396ca46ff21fd47a8.jpg");
+    background-position: center center;
+}
+
+/*Tamaños*/
+
+.ancho{
+    /*Con width, podemos modificar el anchor*/
+    background-color: #BCE748;
+    width: 100px;
+}
+
+.alto{
+    /*con height, podemos modificar el largor*/
+    background-color: aqua;
+    height: 500px;
+}
+
+.tarjeta{
+
+    /*border: es para el borde del div
+    style: es para el estilo de borde del div
+    color: es para modificar el color de borde del div
+    width: es para modificar el ancho del div
+    top: none = es para quitar el borde de la parte superior del div
+    padding: es para los espacios que hay adentro del div
+    magin: es para la margen que hay entre el div y otros divs o elementos */
+    border-style: solid;
+    border-color: rgb(70, 25, 25);
+    border-width: 1px;
+    border-top: none;
+    padding: 5px;
+    margin: 10px;
+}

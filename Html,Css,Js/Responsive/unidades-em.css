@@ -1,0 +1,26 @@
+
+
+/*Lo que hacemos es crear dos divs, le damos un font-size de em y rem, luego lo que hacemos es intentar cambiarlo colocando un font-size de px, pero el único que se cambia es el em, el rem no se cambia porque eso ya va del tamaño de la fuente raíz del dispositivo*/
+
+
+.escenario{
+    border: 1px solid #333;
+    padding: 10px;
+}
+
+.escenario-1{
+    font-size: 32px;
+}
+
+
+.escenario-2{
+    font-size: 16px;
+}
+
+.em{
+    font-size: 2em;
+}
+
+.rem{
+    font-size: 2rem;
+}

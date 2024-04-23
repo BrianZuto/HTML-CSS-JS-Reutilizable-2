@@ -1,0 +1,39 @@
+body{
+    padding: 20px;
+    margin: 0;
+}
+
+
+/*Podemos darle dos nombres a una clase para poder darles propiedades generales*/
+.escenario{
+    margin: 10px 0px;
+    border: 1px solid #ccc;
+    padding: 10px;
+}
+
+/*Y con un nombre en especifico le damos propiedades especificas a cada clase */
+.escenario-1{
+    width: 100%;
+}
+
+.escenario-2{
+    width: 50%;
+}
+
+/*Px, significa pixeles, y no importa el tamaño, siempre se mantienen en su largor*/
+.px{
+    background-color: green;
+    width: 200px;
+}
+
+/*Porcentaje es el porcentaje del div, lo cual respeta lo grande y se acompla frente al largo del div*/
+.porcentaje{
+    background-color: red;
+    width: 50%;
+}
+
+/*View, es lo grande de toda la pantalla o depende qué tan grande sea la pantalla, esta no respeta divs, simplemente es grande de la pantalla del ordenador */
+.view{
+    background-color: yellow;
+    width: 50vw;
+}

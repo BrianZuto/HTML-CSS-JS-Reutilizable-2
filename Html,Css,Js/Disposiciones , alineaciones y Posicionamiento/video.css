@@ -1,0 +1,30 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    font-family:Helvetica;
+    color: white;
+}
+.video{
+    width: 100vw;
+    height: 100vw;
+
+    /*Debe redimensionarse para ajustarse a la pantalla*/
+    object-fit: cover;
+    position: fixed;
+}
+
+.header{
+    height: 100vw;
+    position: relative;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+    /*Centrar un div*/
+    justify-content: center;
+    align-items: center;
+}

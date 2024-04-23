@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Formularios</title>
+</head>
+
+<body>
+    Acá vamos a empezar a escribir un nuevo código
+    <br>
+    <br>
+    <br>
+
+    <!--form: Formulario
+        action: A donde se dirige la información
+        method: 
+        *get : Para mandar datos
+        *post: para traer datos de una base de datos-->
+    <form action="resultados_Botones.html" method="get">
+
+        <div>
+        <label for="nombreusuario">Nombre de Usuario</label>
+        <input name="nombreusuario" id="nombreusuario" type="text" >
+        </div>
+        <br>
+
+        <div>
+            <!--name: Es para diferenciar cada input
+                for: Es para que el label sepa a qué input le pertenece
+                required: Para que el campo sea obligatorio de llenar 
+                id: Para que tenga una identificacion-->
+        <label for="contraseña">Contraseña</label>
+        <input type="password" id="contraseña" name="contraseña" >
+        </div>
+
+
+        <!--min: para saber el minimo que se puede colocar
+            max: para saber le maximo que se pueda colocar
+            step: Valor en el que se va incrementador el numerados-->
+        <div>
+            <br>
+            <label for="edad">¿Cuál es tu edad?</label>
+            <input type="number" id="edad" name="edad" required min="0" max="100" step="5">
+        </div>
+        <br>
+
+        <div>
+            <label for="fnacimiento">FECHA DE NACIMIENTO</label>
+            <input name="fnacimiento" id="fnacimiento" type="date" >
+            </div>
+            <br>
+        
+        <div>
+            <br>
+            <label for="email">¿Cuál es tu Email?</label>
+            <input type="email" id="email" name="email" >
+        </div>
+        <br>
+
+        <div>
+            <br>
+            <label for="comentarios">Comentarios</label>
+            <textarea name="comentarios" id="comentarios"></textarea>
+        </div>
+        <br>
+        <br>
+
+
+        <button type="submit">Enviar</button>
+        <button type="reset">Resetear</button>
+
+    </form>
+</body>
+
+</html>

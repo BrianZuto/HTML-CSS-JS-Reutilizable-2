@@ -1,0 +1,48 @@
+div{
+
+    border: 1px solid gray;
+    padding: 5px;
+    margin: 5px;
+}
+
+/*Posicionamiento relativo - se posiciona en relación al posicionamiento original*/
+.relative{
+    position: relative;
+    left: 80px;
+    margin-left: 10px;
+}
+
+/*Posicionamiento fijo - se posiciona en relación a la pantalla*/
+.fixed{
+    position: fixed;
+    bottom: 0px;
+    left: 0px;
+    z-index: 10;
+}
+
+/*Posicionamiento absoluto - se fija en la página más no en la pantalla*/
+
+.absolute{
+    position: absolute;
+    bottom: 30px;
+    right: 0px;
+}
+
+/*Posicionamiento de un div para que siempre esté visible*/
+.sticky{
+    background-color: darksalmon;
+    color: aliceblue;
+    position: sticky;
+    top: 0px;
+
+    /*el z-index  indica el orden de un elemento posicionado y sus descendientes.
+    Cuando varios elementos se superponen, los elementos con mayor valor z-index
+    cubren aquellos con menor valor. */
+    z-index: 2;
+}
+
+.fondo{
+    background-color: blue;
+    height: 3000px;
+    width: 3000px;
+}
